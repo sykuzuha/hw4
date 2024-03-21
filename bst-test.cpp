@@ -8,7 +8,7 @@ using namespace std;
 
 int main(int argc, char *argv[])
 {
-    // Binary Search Tree tests
+    /*// Binary Search Tree tests
     BinarySearchTree<char,int> bt;
     bt.insert(std::make_pair('a',1));
     bt.insert(std::make_pair('b',2));
@@ -42,7 +42,16 @@ int main(int argc, char *argv[])
         cout << "Did not find b" << endl;
     }
     cout << "Erasing b" << endl;
-    at.remove('b');
+    at.remove('b');*/
+    BinarySearchTree<uint16_t, uint16_t> testTree;
+
+	testTree.insert(std::make_pair(5, 8));
+	testTree.insert(std::make_pair(3, 159));
+	testTree.insert(std::make_pair(1, 9));
+	testTree.insert(std::make_pair(10, 0x5a));
+	testTree.insert(std::make_pair(15, 0xb));
+	testTree.insert(std::make_pair(2, 4));
+	testTree.insert(std::make_pair(4, 159));
 
     return 0;
 }
